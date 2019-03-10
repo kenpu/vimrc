@@ -60,3 +60,4 @@ hi CursorLine cterm=bold
 hi Search cterm=bold,underline ctermfg=Red
 set cursorline
 
+let g:NERDTreeNodeDelimiter = "\u00a0"
