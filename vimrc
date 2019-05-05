@@ -55,7 +55,7 @@ syntax enable
 " --------- Colormap -----------------
 "colorscheme solarized8_light
 colorscheme solarized8_dark
-hi MatchParen cterm=bold ctermfg=red ctermbg=None
+hi MatchParen cterm=underline
 hi CursorLine cterm=bold
 hi Search cterm=bold,underline ctermfg=Red
 set cursorline
