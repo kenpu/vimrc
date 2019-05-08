@@ -11,3 +11,4 @@ all:
 install: ~/.vim/bundle/Vundle.vim
 	cp ./vimrc ~/.vimrc
 	cp -R ./vim/ ~/.vim
+	cp ./tmux.conf ~/.tmux.conf
