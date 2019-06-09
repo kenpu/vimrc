@@ -14,7 +14,7 @@ call vundle#begin()
     Plugin 'groenewege/vim-less'
     Plugin 'derekwyatt/vim-scala'
     Plugin 'dylon/vim-antlr'
-    Plugin 'flazz/vim-colorschemes' "https://github.com/flazz/vim-colorschemes
+    Plugin 'altercation/vim-colors-solarized'
 call vundle#end()
 filetype plugin indent on
 
@@ -50,14 +50,18 @@ let g:clojure_fuzzy_indent = 0
 au BufRead,BufNewFile *.g set filetype=antlr3
 au BufRead,BufNewFile *.g4 set filetype=antlr4
 
-syntax enable
-
-" --------- Colormap -----------------
-"colorscheme solarized8_light
-colorscheme solarized8_dark
+" --------- UI tweaks ----------------
 hi MatchParen cterm=underline
-hi CursorLine cterm=bold
+hi CursorLine cterm=underline
 hi Search cterm=bold,underline ctermfg=Red
 set cursorline
 
 let g:NERDTreeNodeDelimiter = "\u00a0"
+
+" ---- color map -----
+set t_Co=256
+syntax enable
+set background=dark
+colorscheme solarized
+
+
